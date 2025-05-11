@@ -47,7 +47,7 @@ export const menuItems = [
     url: "https://www.entrepreneurshipnetwork.net/Influencer_Marketing",
   },
   {
-    title: "Ten Ai-Consulting Lab",
+    title: "Ai-Consulting Lab",
     icon: <BrainCircuit className="w-5 h-5" />,
     description:
       "AI-driven business consulting lab helping organizations harness artificial intelligence for smarter decision-making and innovation.",

@@ -13,7 +13,7 @@ export function Footer({ menuItems = [] }) {
           transition={{ duration: 0.5 }}
         >
           <div>
-            <h4 className="text-lg font-semibold mb-4">About TEN-Incubation</h4>
+            <h4 className="text-xl font-semibold mb-4">About TEN-Incubation</h4>
             <p className="text-gray-200 leading-relaxed">
               TEN-Incubation is a dynamic platform that supports aspiring
               entrepreneurs by providing mentorship, resources, and a
@@ -23,8 +23,8 @@ export function Footer({ menuItems = [] }) {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {menuItems.map((item, index) => (
                 <motion.li
                   key={index}
@@ -43,11 +43,11 @@ export function Footer({ menuItems = [] }) {
                   </a>
                 </motion.li>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="text-xl font-semibold mb-4">Contact</h4>
             <motion.div
               className="text-gray-200 space-y-2"
               initial={{ opacity: 0, x: 20 }}
@@ -76,6 +76,7 @@ export function Footer({ menuItems = [] }) {
           </div>
         </motion.div>
 
+        {/* Footer Bottom */}
         <motion.div
           className="mt-10 pt-8 border-t border-white text-center text-gray-300 text-sm"
           initial={{ opacity: 0 }}
