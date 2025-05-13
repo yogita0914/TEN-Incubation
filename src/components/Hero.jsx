@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export function Hero({ featureCardRef }) {
   const scrollToHero2 = () => {
@@ -12,6 +13,7 @@ export function Hero({ featureCardRef }) {
       behavior: "smooth",
     });
   };
+  const navigate = useNavigate();
 
   return (
     <header className="bg-gradient-to-b from-orange-200 to-yellow-100 text-gray-800">
@@ -49,10 +51,10 @@ export function Hero({ featureCardRef }) {
         </motion.p>
 
         <motion.button
-          className="mt-10 bg-gradient-to-r from-[#bc6c25] to-[#8B5CF6] text-white px-8 py-3 rounded-full font-semibold text-lg shadow-md hover:bg-[#a75f20] transition duration-300"
+          className="mt-10 bg-gradient-to-r from-[#bc6c25] to-[#8B5CF6] text-white px-8 py-3 cursor-pointer rounded-full font-semibold text-lg shadow-md hover:bg-[#a75f20] transition duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={scrollToHero2}
+          onClick={() => navigate("/opportunities")} // navigate to new page
         >
           Explore Opportunities
         </motion.button>

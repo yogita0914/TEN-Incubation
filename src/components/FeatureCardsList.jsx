@@ -18,7 +18,7 @@ function FeatureCardsList({ featureCardRef }) {
         <div className="flex justify-center mt-6">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-gradient-to-r from-[#bc6c25] to-[#8B5CF6] text-white py-2 px-6 rounded-full shadow hover:shadow-lg transition-all duration-300"
+            className="bg-gradient-to-r from-[#bc6c25] to-[#8B5CF6] text-white cursor-pointer py-2 px-6 rounded-full shadow hover:shadow-lg transition-all duration-300"
           >
             See More
           </button>

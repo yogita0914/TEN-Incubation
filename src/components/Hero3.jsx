@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 export function Hero3({ featureCardRef }) {
   const scrollToFeatureCards = () => {
@@ -33,10 +35,14 @@ export function Hero3({ featureCardRef }) {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-[#bc6c25] to-[#8B5CF6] text-white px-8 py-3 rounded-full font-semibold text-lg shadow-md hover:bg-[#a65d20] transition-colors duration-300"
+            className="bg-gradient-to-r from-[#bc6c25] to-[#8B5CF6] text-white px-8 py-3  cursor-pointer rounded-full font-semibold text-lg shadow-md hover:bg-[#a65d20] transition-colors duration-300"
             onClick={scrollToFeatureCards}
           >
-            Apply for Incubation
+            <Link to="/contact">
+              <button >
+                Apply for Incubation
+              </button>
+            </Link>
           </motion.button>
         </motion.div>
       </div>

@@ -8,6 +8,7 @@ import { About } from "./pages/About";
 import Contact from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
 import { ScrollToTop } from "./components/ScrollToTop";
+import Opportunities from "./pages/Opportunities";
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/opportunities" element={<Opportunities />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer menuItems={menuItems} />
